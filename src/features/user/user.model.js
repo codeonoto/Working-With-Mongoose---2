@@ -1,5 +1,5 @@
-import { getDB } from '../../config/mongodb.js';
-import ApplicationError from '../../errorHandler/applicationError.js';
+import { getDB } from "../../config/mongodb.js";
+import { ApplicationError } from "../../error-handler/applicationError.js";
 
 export default class UserModel {
   constructor(name, email, password, type, id) {
@@ -15,19 +15,19 @@ export default class UserModel {
   }
 }
 
-let users = [
+var users = [
   {
     id: 1,
     name: 'Seller User',
-    email: 'seller@ecom.in',
-    password: 'noob',
+    email: 'seller@ecom.com',
+    password: 'Password1',
     type: 'seller',
   },
   {
     id: 2,
     name: 'Customer User',
-    email: 'custom@ecom.in',
-    password: 'noob',
+    email: 'customer@ecom.com',
+    password: 'Password1',
     type: 'customer',
   },
 ];

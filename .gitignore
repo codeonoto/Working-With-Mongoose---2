@@ -1,4 +1,2 @@
-/node_modules
-/API_Lists.txt
-logs.txt
+./node_moduels
 .env

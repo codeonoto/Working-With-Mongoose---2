@@ -1,13 +1,14 @@
-import mongoose, { Schema } from 'mongoose';
+import mongoose from "mongoose";
 
-export const reviewSchema = new Schema({
-  product: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'products',
-  },
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'users',
-  },
-  rating: Number,
-});
+
+export const reviewSchema = new mongoose.Schema({
+    product:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'Product'
+    },
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'User'
+    },
+    rating: Number
+})
